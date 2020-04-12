@@ -15,3 +15,8 @@
 * npm install -g nodemon
 * npm install --save-dev nodemon
 * nodemon start
+
+##Codeing
+### Bring static content
+  *app.use(express.static('public'))
+  * and remove public(root folder from caller)
