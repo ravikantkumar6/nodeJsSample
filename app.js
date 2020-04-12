@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testApi = require('./routes/testapi');
+const { check, validationResult } = require('express-validator');
 // var userdetail = require('./routes/usedetail');
 
 

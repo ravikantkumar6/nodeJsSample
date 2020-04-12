@@ -19,6 +19,22 @@
 -* npm install --save-dev nodemon
 -* nodemon start
 ```
+### Install express-validator
+```diff
++* npm install --save express-validator
++* const { check, validationResult } = require('express-validator');
+```
+```javascript 
+[check('username','username should be email').isEmail(), check('password','password should be 5 length').isLength({min : 5})]
+
+ const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    errors.array()[0].title = "Error!!!";
+    return res.render('error',errors.array()[0]);
+  }
+
+```
+
 ## Coding
 ### Bring static content
 ```diff
