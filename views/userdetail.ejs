@@ -8,7 +8,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="container">
-       
     <center><H1>Welcome to <%= title %></H1></center>
     <div class="col">
       <a href="#" class="btn">
@@ -18,16 +17,11 @@
        <img src="/static/images/Logo.png"/>
       </a>
     </div>
-
     <div class="con">
-      <form action="/login" method="POST">     
-          <div class="col">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-          </div>          
-        </div>
-      </form>
+      <div class="col">
+        <p>UserName :: <%= username %></p>
+        <p>Password :: <%= password %></p>
+      </div>
     </div>
   </body>
 </html>
