@@ -16,7 +16,9 @@
 * npm install --save-dev nodemon
 * nodemon start
 
-##Codeing
+## Codeing
 ### Bring static content
   * app.use(express.static('public'))
   * And remove public(root folder from caller)
+  * to use virtual path need to add "app.use('/static', express.static('public'))".
+  * Static coller place will add /static
