@@ -18,5 +18,5 @@
 
 ##Codeing
 ### Bring static content
-  *app.use(express.static('public'))
-  * and remove public(root folder from caller)
+  * app.use(express.static('public'))
+  * And remove public(root folder from caller)
