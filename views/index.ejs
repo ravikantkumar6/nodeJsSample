@@ -22,7 +22,17 @@
       <form action="/login" method="POST">     
           <div class="col">
             <input type="text" name="username" placeholder="Username" required>
+            
+            <% if(errors.username != null){ %>
+              <P style="color: red;"><%= errors.username.msg %></p>
+            <% } %> 
+              
+              
             <input type="password" name="password" placeholder="Password" required>
+            <% if(errors.password != null){ %>
+              <P style="color: red;"><%= errors.password.msg %></p>
+            <% } %> 
+            
             <input type="submit" value="Login">
           </div>          
         </div>
